@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    width: 100vw; 
+    background-image: url("img/Airbrush-IMAGE-ENHANCER-1765864649866-1765864649867.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.nav {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    border-bottom: 5px double red;
+    padding: 50px;
+}
+        
+.nav a {
+    text-decoration: none; 
+    color: white;
+    font-size: 25px; 
+}
+
+.main {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main h1 {
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+
+.main p {
+    color: white;
+    font-size: 25px;
+}
+
+.div-otchet {
+    padding-top: 50px;
+    text-align: center;
+    display: none;
+    color: white;
+}
+
+.div-otchet p {
+    font-size: 30px;
+}
+
+.div-otchet h1 {
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.div-audio {
+    padding-top: 30px;
+    text-align: center;
+    display: none;
+    color: white;
+}
+
+.div-audio .audio-pleer {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: white;
+}
+
+.div-audio .audio-pleer .func_audio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.div-audio .audio-pleer .func_audio a {
+    height: 70px;
+    width: 70px;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.div-audio .audio-pleer h1 {
+    font-size: 40px;
+    transform: translateY(20px);
+}
+
+.div-audio .audio-pleer .progress  {
+    font-size: 18px;
+    transform: translateY(30px);
+}
+
+.div-wishes {
+    display: none;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.div-wishes h1 {
+    font-size: 50px;
+    color: orange;
+}
+
+.div-wishes .wishes {
+    margin: auto;
+    width: 630px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.div-wishes a {
+    text-decoration: none;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: green;
+    padding: 25px 150px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.div-kviz {
+    display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.div-kviz .quiz-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-kviz .quiz-card {
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.div-kviz .quiz-card input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.div-kviz .quiz-card h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.div-kviz .quiz-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.div-kviz .quiz-buttons {
+    display: flex;
+    gap: 15px;
+    width: 500px;
+}
+
+.div-kviz .quiz-buttons button {
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: #C62828;
+    color: white;
+    font-size: 16px;
+}
+
+.div-kviz .quiz-buttons button:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.a {
+    display: none;
+}
+
+
+
+
+/* этот код был взят с сайта https://frontendin.com/html-css-music-players/ , это не мой уровень просто чтобы такие вещи делать ((( */
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+.container-audio .colum1:last-child {
+    margin: 0;
+}
+.container-audio .colum1 .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to up, #7700aa, #8800ff);
+    position: absolute;
+    -webkit-animation: Rofa 10s infinite ease-in-out;
+    animation: Rofa 10s infinite ease-in-out;
+    bottom: 0;
+}
+.container-audio .colum1:nth-of-type(1) .row {
+    -webkit-animation-delay: 3.99s;
+    animation-delay: 3.99s;
+}
+.container-audio .colum1:nth-of-type(2) .row {
+    -webkit-animation-delay: 3.80s;
+    animation-delay: 3.80s;
+}
+.container-audio .colum1:nth-of-type(3) .row {
+    -webkit-animation-delay: 3.70s;
+    animation-delay: 3.70s;
+}
+.container-audio .colum1:nth-of-type(4) .row {
+    -webkit-animation-delay: 3.60s;
+    animation-delay: 3.60s;
+}
+.container-audio .colum1:nth-of-type(5) .row {
+    -webkit-animation-delay: 3.50s;
+    animation-delay: 3.50s;
+}
+.container-audio .colum1:nth-of-type(6) .row {
+    -webkit-animation-delay: 3.40s;
+    animation-delay: 3.40s;
+}
+.container-audio .colum1:nth-of-type(7) .row {
+    -webkit-animation-delay: 3.30s;
+    animation-delay: 3.30s;
+}
+.container-audio .colum1:nth-of-type(8) .row {
+    -webkit-animation-delay: 3.20s;
+    animation-delay: 3.20s;
+}
+.container-audio .colum1:nth-of-type(9) .row {
+    -webkit-animation-delay: 3.10s;
+    animation-delay: 3.10s;
+}
+.container-audio .colum1:nth-of-type(10) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(11) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(12) .row {
+    -webkit-animation-delay: 2.10s;
+    animation-delay: 2.10s;
+}
+.container-audio .colum1:nth-of-type(13) .row {
+    -webkit-animation-delay: 2.20s;
+    animation-delay: 2.20s;
+}
+.container-audio .colum1:nth-of-type(14) .row {
+    -webkit-animation-delay: 1.30s;
+    animation-delay: 1.30s;
+}
+.container-audio .colum1:nth-of-type(15) .row {
+    -webkit-animation-delay: 1.40s;
+    animation-delay: 1.40s;
+}
+.container-audio .colum1:nth-of-type(16) .row {
+    -webkit-animation-delay: 1.50s;
+    animation-delay: 1.50s;
+}
+.container-audio .colum1:nth-of-type(17) .row {
+    -webkit-animation-delay: 1.60s;
+    animation-delay: 1.60s;
+}
+.container-audio .colum1:nth-of-type(18) .row {
+    -webkit-animation-delay: 1.70s;
+    animation-delay: 1.70s;
+}
+.container-audio .colum1:nth-of-type(19) .row {
+    -webkit-animation-delay: 1.80s;
+    animation-delay: 1.80s;
+}
+.container-audio .colum1:nth-of-type(20) .row {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes Rofa {
+    0% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: yellow;
+    }
+
+    5% {
+        height: 100%;
+        -webkit-transform: translatey(15px);
+        transform: translatey(15px);
+        background-color: fuchsia;
+    }
+    10% {
+        height: 90%;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+        background-color: bisque;
+    }
+
+    15% {
+        height: 80%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    20% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    25% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    30% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    35% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    40% {
+        height: 60%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    45% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    50% {
+        height: 50%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    55% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    60% {
+        height: 40%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    65% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    70% {
+        height: 30%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    75% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    80% {
+        height: 20%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    85% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    90% {
+        height: 10%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    95% {
+        height: 5%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    100% {
+        height: 0;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+}
